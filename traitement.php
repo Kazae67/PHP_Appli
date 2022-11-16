@@ -75,7 +75,6 @@ switch($_GET["action"]){
                 header("Location: Recap.php");
             }
             break;   
-
-            
+        
 }
 ?>

@@ -83,6 +83,6 @@
     - Supprimer tout les produits en session en une seule fois [VALID]
     - Modifier les quantités de chaque produit grâce à deux points "+" et "-" [VALID]
       positionnés de part et d'autre du nombre dans la cellule
-(5) S'amuser avec le design =] [VALID]
+(5) S'amuser avec le design =] [FINISH]
 */
 ?>
