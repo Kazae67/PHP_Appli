@@ -10,7 +10,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Styl.css">
+        <link rel="stylesheet" href="styl.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Ajout produit</title>
     </head>
@@ -18,7 +18,7 @@
 
         <header>
             <?php
-            require('Header.php');
+            require('header.php');
             ?>
         </header>
 
@@ -65,7 +65,7 @@
 
     <footer>
         <?php
-            require('Footer.php');
+            require('footer.php');
         ?>
     </footer>
 
@@ -76,15 +76,15 @@
     ou index.php à tout moment dans un menu [VALID]
 (2) Afficher le nombre de produits présents en session à tout moment, [VALID]
     quelle que soit la page [VALID]
-(3) Faire en sorte que le fichier traitement.php crée un message d'erreur [Plus tard]
-    ou succès lorqu'il retourne au formulaire et permettre à l'index.php de l'afficher [Plus tard]
+(3) Faire en sorte que le fichier traitement.php crée un message d'erreur [VALID]
+    ou succès lorqu'il retourne au formulaire et permettre à l'index.php de l'afficher [VALID]
 (4) Ajouter 3 fonctionnalités utiles dans recap.php : [VALID]
     - Supprimer un produit en session (selon le choix de l'utilisateur) [VALID]
     - Supprimer tout les produits en session en une seule fois [VALID]
     - Modifier les quantités de chaque produit grâce à deux points "+" et "-" [VALID]
       positionnés de part et d'autre du nombre dans la cellule
-(5) S'amuser avec le design =] [FINISH]
-(6) Ajouter un "Min" pour ne pas être en négatif [EN COURS]
+(5) S'amuser avec le design =] [VALID]
+(6) Ajouter un "Min" pour ne pas être en négatif [VALID]
 (7) multiplier depuis l'recap le price * total et l'ajouter dans l'traitement pour remplacer [Plus tard]
     les lignes 63 - 64 pour incrémenter ainsi que les lignes 73-74 pour décrémenter 
 */

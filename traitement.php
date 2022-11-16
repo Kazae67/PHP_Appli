@@ -30,33 +30,33 @@ switch($_GET["action"]){
         $_SESSION["products"]["price"];
 
         if(isset($_POST['submit']) && !empty($name) && preg_match("/^[a-zA-Z]*$/", $name)){
-            header("Location:Redirection.php");
+            header("Location:redirection.php");
             break;
         }
         
         // commentaire
         if(empty($name)){
             $_SESSION['message_product']="*Entrez un produit";
-            header("Location:Index.php");
+            header("Location:index.php");
             break;
         }
 
         if(!preg_match("/^[a-zA-Z]*$/", $name)){
             $_SESSION['message_string']="*Pas de caractères spéciaux";
-            header("Location:Index.php");
+            header("Location:index.php");
             break;
         }
         
         // Supprimer le produit
         case "supprimer":
             unset($_SESSION["products"][$id]); // Je cherche l'id du produit dans la session et le désactive par "unset"
-            header("Location: Recap.php"); // L'empêche de rester sur Traitement.php?action=supprimer&id=0++
+            header("Location: recap.php"); // L'empêche de rester sur traitement.php?action=supprimer&id=0++
             break;
 
         // Supprimer les produits
         case "cleanAll":
             unset($_SESSION["products"]);
-            header("Location:Recap.php");
+            header("Location:recap.php");
             break;
 
         // Incrémenter un produit
@@ -65,7 +65,7 @@ switch($_GET["action"]){
                 $_SESSION["products"][$_GET["id"]]["qtt"]++;
                 $_SESSION["products"][$_GET["id"]]["total"]+= 
                 $_SESSION["products"][$_GET["id"]]["price"];
-                header("Location: Recap.php");
+                header("Location: recap.php");
             }
             break;
         
@@ -78,7 +78,7 @@ switch($_GET["action"]){
                 if($_SESSION["products"][$_GET["id"]]["qtt"] == 0){
                 unset($_SESSION["products"][$_GET["id"]]);
                 }
-                header("Location: Recap.php");
+                header("Location: recap.php");
             }
             break;   
         
