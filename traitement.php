@@ -29,6 +29,7 @@ switch($_GET["action"]){
             break;
         }
         
+        // commentaire
         if(empty($name)){
             $_SESSION['message_product']="*Entrez un produit";
             header("Location:Index.php");
