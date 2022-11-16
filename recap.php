@@ -44,6 +44,7 @@
             // avant la boucle on initialise une variable à 0 
             $totalGeneral = 0;
             foreach($_SESSION['products'] as $index => $product) {
+                
                 // .number_format() = permet de modifier l'affichage d'une valeur numérique en précisant plusieurs params
                 // HTML et &nbsp = est un espace insécable
                 echo "<tr>",

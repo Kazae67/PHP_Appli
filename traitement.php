@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$id = (isset($_GET["id"])) ? $_GET["id"] : null;
+
 switch($_GET["action"]){
     case "modifier" :
         
@@ -21,8 +23,11 @@ switch($_GET["action"]){
                 ];
                 
                 $_SESSION['products'][] = $product;
+                
             }
         }
+
+        $_SESSION["products"]["price"];
 
         if(isset($_POST['submit']) && !empty($name) && preg_match("/^[a-zA-Z]*$/", $name)){
             header("Location:Redirection.php");
@@ -44,7 +49,7 @@ switch($_GET["action"]){
         
         // Supprimer le produit
         case "supprimer":
-            unset($_SESSION["products"][$_GET["id"]]); // Je cherche l'id du produit dans la session et le désactive par "unset"
+            unset($_SESSION["products"][$id]); // Je cherche l'id du produit dans la session et le désactive par "unset"
             header("Location: Recap.php"); // L'empêche de rester sur Traitement.php?action=supprimer&id=0++
             break;
 

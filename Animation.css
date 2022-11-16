@@ -11,7 +11,6 @@ body{
     min-width: 100vh;
 
 }
-
 .container{
     position: relative;
     width:100%;
@@ -20,7 +19,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .container .ring{
     position: relative;
     width: 150px;
@@ -33,7 +31,7 @@ body{
     0 0 0 10px #24ecff22,
     0 0 0 15px #00eaff11,
     0 0 150px #ff0000,
-    0 0 30px #ffffff;
+    0 0 250px #ff00006f;
     animation : animate 2s linear infinite;
 }
 

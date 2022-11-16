@@ -33,13 +33,13 @@
             <p>
                 <label>
                     Prix du produit :<br>
-                    <input type="number" step="any" name="price">
+                    <input type="number" step="any" name="price" min="0">
                 </label>
             </p>
             <p>
                 <label>
                     Quantité désirée :<br>
-                    <input type="number" name="qtt" value="1">
+                    <input type="number" name="qtt" value="1" min="0">
                 </label>
             </p>
             <p>
@@ -84,5 +84,8 @@
     - Modifier les quantités de chaque produit grâce à deux points "+" et "-" [VALID]
       positionnés de part et d'autre du nombre dans la cellule
 (5) S'amuser avec le design =] [FINISH]
+(6) Ajouter un "Min" pour ne pas être en négatif [EN COURS]
+(7) multiplier depuis l'recap le price * total et l'ajouter dans l'traitement pour remplacer [Plus tard]
+    les lignes 63 - 64 pour incrémenter ainsi que les lignes 73-74 pour décrémenter 
 */
 ?>
