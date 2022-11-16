@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     display: flex;
     justify-content: center;
@@ -45,6 +46,7 @@ body{
         transform:rotate(360deg);
     }
 }
+
 .container .ring:before{
     content: '';
     position: absolute;
@@ -65,6 +67,7 @@ body{
     animation: animate2 2s linear infinite;
 
 }
+
 .container .ring:nth-child(2)::before{
     content: '';
     position: absolute;

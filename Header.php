@@ -26,4 +26,4 @@
             </div>
             <img src="img/menu-burger.png" alt="menu hamburger" class="menu-hamburger">
         </nav>
-    </header>
+    </header> 
