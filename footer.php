@@ -5,5 +5,4 @@
             menuHamburger.addEventListener('click',()=>{
             navLinks.classList.toggle('mobile-menu')
             })
-        </script>
-  
+        </script> 
